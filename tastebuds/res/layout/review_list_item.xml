@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80sp"
+    android:paddingLeft="8sp"
+    android:paddingRight="8sp"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/ivReviewUser"
+        android:layout_width="56sp"
+        android:layout_height="56sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8sp"
+        android:layout_marginBottom="8sp"
+        android:contentDescription="@string/review_user_desc"
+        android:src="@drawable/ic_action_restaurant"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tvReviewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="240sp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingLeft="8sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivReviewUser"
+        android:layout_marginTop="8sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/user_name_text" />
+        
+    <RatingBar
+        android:id="@+id/rbReviewRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_below="@+id/tvReviewUsername"
+        android:paddingLeft="8sp"
+        android:layout_toRightOf="@+id/ivReviewUser" />
+
+    <TextView
+        android:id="@+id/tvReviewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8sp"
+        android:text="@string/time_hint"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+     <com.rockerhieu.emojicon.EmojiconTextView
+        android:id="@+id/txtEmojicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvReviewTime"
+        android:textSize="24sp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvReviewContent"
+        android:layout_width="wrap_content"
+        android:layout_height="28sp"
+        android:layout_alignLeft="@+id/tvReviewUsername"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtEmojicon"
+        android:paddingLeft="8sp"
+        android:paddingBottom="8sp"
+        android:text="@string/review_text" />
+
+</RelativeLayout>

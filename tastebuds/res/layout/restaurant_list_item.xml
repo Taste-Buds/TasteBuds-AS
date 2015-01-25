@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="88sp"
+    android:paddingLeft="8sp"
+    android:paddingRight="8sp" >
+
+    <ImageView
+        android:id="@+id/ivRestaurantImage"
+        android:layout_width="56sp"
+        android:layout_height="56sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8sp"
+        android:layout_marginBottom="8sp"
+        android:src="@drawable/abs__ab_bottom_solid_dark_holo"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tvRestaurantName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivRestaurantImage"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8sp"
+        
+        android:layout_marginLeft="8sp"
+        android:text="Restaurant Name" 
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <RatingBar
+        android:id="@+id/rbTasteBudsRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRestaurantName"
+        android:layout_toRightOf="@+id/ivRestaurantImage"
+        android:layout_marginLeft="8sp" 
+        style="?android:attr/ratingBarStyleSmall" />
+        
+    <TextView
+        android:id="@+id/tvDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvRestaurantName"
+        android:layout_alignParentRight="true"
+        android:text="Distance"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tvDollars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/rbTasteBudsRating"
+        android:text="$"
+        android:textAlignment="textEnd" />
+
+
+    <ImageView
+        android:id="@+id/ivRestaurantGraphic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rbTasteBudsRating"
+        android:layout_below="@+id/rbTasteBudsRating"
+        android:src="@drawable/ic_restaurant" />
+    
+    <TextView
+        android:id="@+id/tvNumberofReviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivRestaurantGraphic"
+        android:layout_alignBaseline="@+id/ivRestaurantGraphic"
+        android:layout_below="@+id/rbTasteBudsRating"
+        android:paddingLeft="1sp"
+        android:paddingRight="6sp"
+        android:paddingTop="6sp"
+        android:paddingBottom="6sp"
+        android:text="11" />    
+    
+    <ImageView
+        android:id="@+id/ivDishGraphic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6sp"
+        android:layout_toRightOf="@+id/tvNumberofReviews"
+        android:layout_alignBaseline="@+id/ivRestaurantGraphic"
+        android:layout_below="@+id/rbTasteBudsRating"
+        android:src="@drawable/ic_dish_review" />
+
+    <TextView
+        android:id="@+id/tvNumberofDishReviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivDishGraphic"
+        android:layout_alignBaseline="@+id/ivRestaurantGraphic"
+        android:layout_below="@+id/rbTasteBudsRating"
+        android:paddingLeft="1sp"
+        android:paddingRight="6sp"
+        android:paddingTop="6sp"
+        android:paddingBottom="6sp"
+        android:text="0" /> 
+
+    <com.rockerhieu.emojicon.EmojiconTextView
+        android:id="@+id/txtEmojicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvDollars"
+        android:textSize="24sp"
+        android:text="" />
+    
+</RelativeLayout>

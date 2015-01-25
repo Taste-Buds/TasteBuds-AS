@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutSetting"
+    android:layout_width="match_parent"
+    android:layout_height="300dp" >
+
+    <RelativeLayout
+        android:id="@+id/composeDishReviewTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff9933"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btnComposeBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#ff9933"
+            android:contentDescription="@string/back_button_desc"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/ic_back" />
+
+        <Button
+            android:id="@+id/btnComposeReview"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/btnComposeBack"
+            android:background="#ff9933"
+            android:gravity="center"
+            android:text="@string/taste_text"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/etWords"
+            android:background="#FFFFFFFF"
+            android:paddingLeft="5dp" />
+
+        <TextView
+            android:id="@+id/tvRestaurantNameCompose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnComposeBack"
+            android:layout_toRightOf="@+id/btnComposeBack"
+            android:text="@string/restaurant_name_string"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <!--
+           TextView
+          android:id="@+id/etWords"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/tvRestaurantNameCompose"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="34dp"
+          android:ems="3"
+          android:text="@string/num_chars_line"
+          android:textColor="#FFFFFFFF" /
+        -->
+
+    </RelativeLayout>
+
+    <RatingBar
+        android:id="@+id/rbComposeReviewRatings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/composeDishReviewTopBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8sp" />
+    
+     <View
+         android:layout_width="fill_parent"
+         android:layout_height="0.5dp"
+         android:layout_marginTop="8sp"
+         android:layout_below="@+id/rbComposeReviewRatings"
+         android:background="#c0c0c0"/>
+
+    <EditText
+        android:id="@+id/etComposeReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rbComposeReviewRatings"
+        android:background="@android:color/transparent"
+        android:hint="@string/compose_review_hint"
+        android:inputType="textMultiLine"
+        android:isScrollContainer="true"
+        android:minHeight="120sp"
+        android:minLines="4"
+        android:paddingBottom="8sp"
+        android:paddingTop="16sp" />
+     <View
+         android:layout_width="fill_parent"
+         android:layout_height="0.5dp"
+         android:layout_marginTop="8sp"
+         android:layout_below="@+id/rbComposeReviewRatings"
+         android:background="#c0c0c0"/>
+
+
+
+    <!--
+           <AutoCompleteTextView
+        android:id="@+id/etComposeTags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvComposeTags"
+        android:layout_alignLeft="@+id/rbComposeReviewRatings"
+        android:layout_alignParentRight="true"
+        android:paddingRight="8sp"
+        android:contentDescription="@string/tags_text"
+        android:ems="10" />
+    -->
+
+   <RelativeLayout
+        android:id="@+id/llRestTags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etComposeReview" >
+
+
+
+        <LinearLayout
+            android:id="@+id/llEmojiRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+        <TextView
+	        android:id="@+id/tvComposeTags"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="8sp"
+	        android:layout_weight="3"
+	        android:text="@string/tags_text"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+            <com.rockerhieu.emojicon.EmojiconEditText
+                android:id="@+id/etComposeTags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:contentDescription="@string/tags_text"
+                android:ems="10"
+                android:text=""
+                emojicon:emojiconSize="28sp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/restEmojicons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llEmojiRow" >
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

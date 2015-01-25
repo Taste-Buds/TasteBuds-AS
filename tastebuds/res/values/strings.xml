@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Tastebuds</string>
+	<string name="action_settings">Settings</string>
+	<string name="hello_world">Hello world!</string>
+	<string name="title_activity_photos">Flickr Photos</string>
+	<string name="login_label">Log in</string>
+	<string name="title_activity_home">HomeActivity</string>
+	<string name="facebook_app_id">280855298792275</string>
+	<string name="title_facebook_login">Login to Facebook </string>
+	<string name="tags_text">Tags:</string>
+	<string name="text_taste">Taste</string>
+	<string name="compose_review_hint">Taste the restaurant</string>
+	<string name="num_chars_line">420</string>
+	<string name="restaurant_name_string">Restaurant Name</string>
+	<string name="taste_text">Taste</string>
+	<string name="back_button_desc">back</string>
+	<string name="compose_dish_review_hint">Taste the dish</string>
+	<string name="dish_review_test">Dish:</string>
+	<string name="title_activity_restaurant_detail">RestaurantDetailActivity</string>
+	<string name="action_review_">AddReview</string>
+	<string name="action_review_compose">AddReview</string>
+	<string name="review_user_desc">Review User</string>
+	<string name="review_text">Review1</string>
+	<string name="user_name_text">Username</string>
+	<string name="time_hint">time</string>
+	<string name="title_activity_user_detail">User Details</string>
+	<string name="action_logout_setting">Logout</string>
+	<string name="action_profile_button">User Profile</string>
+	<string name="title_activity_dish_detail">DishDetailActivity</string>
+	<string name="text_dish_hint">Dish:</string>
+	<string name="address">ADDRESS</string>
+	<string name="status">STATUS</string>
+	<string name="price">PRICE</string>
+	<string name="hours">HOURS</string>
+	<string name="phone">PHONE</string>
+	<string name="googleRating">GOOGLE RATING</string>
+	<string name="website">WEBSITE</string>
+	<string name="friendRating">Friends Rating</string>
+	<string name="FriendsRating">FRIENDS RATING</string>
+	<string name="image_result">Image Result</string>
+    <string name="app_name">Tastebuds</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_photos">Flickr Photos</string>
+    <string name="login_label">Log in</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="facebook_app_id">280855298792275</string>
+    <string name="title_facebook_login">Login to Facebook </string>
+    <string name="tags_text">Tags:</string>
+    <string name="text_taste">Taste</string>
+    <string name="compose_review_hint">Taste the restaurant</string>
+    <string name="num_chars_line">420</string>
+    <string name="restaurant_name_string">Restaurant Name</string>
+    <string name="taste_text">Taste</string>
+    <string name="back_button_desc">back</string>
+    <string name="compose_dish_review_hint">Taste the dish</string>
+    <string name="dish_review_test">Dish:</string>
+    <string name="title_activity_restaurant_detail">RestaurantDetailActivity</string>
+    <string name="action_review_">AddReview</string>
+    <string name="action_review_compose">AddReview</string>
+    <string name="review_user_desc">Review User</string>
+    <string name="review_text">Review1</string>
+    <string name="user_name_text">Username</string>
+    <string name="time_hint">time</string>
+    <string name="title_activity_user_detail">User Details</string>
+    <string name="action_logout_setting">Logout</string>
+    <string name="action_profile_button">User Profile</string>
+    <string name="title_activity_dish_detail">DishDetailActivity</string>
+    <string name="text_dish_hint">Dish:</string>
+    <string name="address">ADDRESS</string>
+    <string name="status">STATUS</string>
+    <string name="price">PRICE</string>
+    <string name="hours">HOURS</string>
+    <string name="phone">PHONE</string>
+    <string name="googleRating">GOOGLE RATING</string>
+    <string name="website">WEBSITE</string>
+    <string name="friendRating">Friends Rating</string>
+    <string name="FriendsRating">FRIENDS RATING</string>
+    <string name="image_result">Image Result</string>
+    <string name="title_activity_search_tag">SearchTagActivity</string>
+
+	<string-array name="nav_drawer_items">
+	    <item>Profile</item>
+		<item>Logout</item>
+	</string-array>
+	<array name="nav_drawer_icons">
+		<item>@drawable/ic_add</item>
+		<!--item>@drawable/com_facebook_close</item-->
+	</array>
+	<!-- Content Description -->
+	<string name="desc_list_item_icon">Item Icon</string>
+	<string name="restaurant_label">Restaurant</string>
+	<string name="dish_label">Dish:</string>
+</resources>

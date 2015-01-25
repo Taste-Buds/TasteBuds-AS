@@ -1,0 +1,51 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+ 	    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+	        <item name="android:background">#ff9933</item>
+	    </style>
+
+ 	    <style name="Widget.TextView.Custom" parent="android:Widget.TextView">
+ 	        <item name="android:textColor">#de000000</item>
+ 	    </style>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:textViewStyle">@style/Widget.TextView.Custom</item>
+        <item name="android:actionBarTabTextStyle">@style/MyTheme.ActionBar.TabText</item-->
+    </style>
+
+      <!-- style name="MyTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyTheme.ActionBar</item>
+	    <item name="android:actionBarTabBarStyle">@style/MyTheme.ActionBar.TabBar</item>
+	    <item name="android:actionBarTabStyle">@style/MyTheme.ActionBar.TabView</item>
+	    <item name="android:actionBarTabStyle">@style/MyTheme.ActionBar.TabView</item>
+	    <item name="android:actionBarTabTextStyle">@style/MyTheme.ActionBar.TabText</item>
+	</style-->
+
+    <!-- style name="MyTheme.ActionBar" parent="android:style/Widget.Holo.Light.ActionBar">
+	    <item name="android:textColor">@android:color/white</item>
+	</style>
+
+	
+	<style name="MyTheme.ActionBar.TabBar" parent="android:style/Widget.Holo.Light.ActionBar.TabBar">
+	    <item name="android:background">@drawable/tab_bar_background</item>
+	</style>
+	<style name="MyTheme.ActionBar.TabView" parent="android:style/Widget.Holo.Light.ActionBar.TabView">
+	    <item name="android:background">@drawable/tab_bar_background</item>
+	</style-->
+	<style name="MyTheme.ActionBar.TabText" parent="android:style/Widget.Holo.ActionBar.TabText">
+	    	    <item name="android:textColor">#de000000</item>
+	</style>
+</resources>
